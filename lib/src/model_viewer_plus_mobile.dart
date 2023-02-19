@@ -50,6 +50,8 @@ class ModelViewerState extends State<ModelViewer> {
     }
   }
 
+  void reload() => _controller.future.then((value) => value.reload());
+
   @override
   Widget build(final BuildContext context) {
     if (_proxy == null) {
