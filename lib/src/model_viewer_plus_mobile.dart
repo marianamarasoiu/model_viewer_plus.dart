@@ -45,7 +45,7 @@ class ModelViewerState extends State<ModelViewer> {
   @override
   void didUpdateWidget(final ModelViewer oldWidget) {
     super.didUpdateWidget(oldWidget);
-        if (widget.relatedJs != oldWidget.relatedJs) {
+    if (widget.relatedJs != oldWidget.relatedJs) {
       reload();
     }
   }
