@@ -625,3 +625,10 @@ class ModelViewer extends StatefulWidget {
   @override
   State<ModelViewer> createState() => ModelViewerState();
 }
+
+class JavascriptChannel {
+  final String name;
+  final void Function(JavaScriptMessage) onMessageReceived;
+
+  JavascriptChannel({required this.name, required this.onMessageReceived});
+}
